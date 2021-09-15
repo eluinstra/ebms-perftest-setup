@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="Console">
+			<PatternLayout pattern="%d [%t] %-5p %c - %m%n" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<AsyncRoot level="INFO">
+			<AppenderRef ref="Console" />
+		</AsyncRoot>
+
+		<AsyncLogger name="nl.clockwork.ebms" level="WARN" />
+		<AsyncLogger name="nl.clockwork.ebms.message" level="WARN" />
+		<AsyncLogger name="nl.clockwork.ebms.client" level="WARN" />
+		<AsyncLogger name="nl.clockwork.ebms.server" level="WARN" />
+		<AsyncLogger name="nl.clockwork.ebms.job" level="WARN" />
+		<AsyncLogger name="org.apache" level="WARN" />
+		<AsyncLogger name="org.apache.http.headers" level="WARN" />
+		<AsyncLogger name="org.apache.http.wire" level="WARN" />
+		<AsyncLogger name="org.apache.cxf" level="WARN" />
+		<AsyncLogger name="org.apache.wicket" level="WARN" />
+		<AsyncLogger name="org.apache.wicket.protocol.http.HttpSessionStore" level="WARN" />
+		<AsyncLogger name="org.apache.wicket.version" level="WARN" />
+		<AsyncLogger name="org.apache.wicket.RequestCycle" level="WARN" />
+		<AsyncLogger name="org.springframework.beans" level="ERROR" />
+		<AsyncLogger name="org.springframework.jdbc" level="WARN" />
+		<AsyncLogger name="org.springframework.jdbc" level="WARN" />
+		<AsyncLogger name="com.zaxxer.hikari" level="ERROR"/>
+		<AsyncLogger name="org.eclipse.jetty" level="ERROR"/>
+	</Loggers>
+</Configuration>
