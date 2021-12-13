@@ -9,17 +9,17 @@ fi
 sudo -u postgres createuser digipoort
 sudo -u postgres psql -c "alter user digipoort with encrypted password 'digipoort'"
 sudo -u postgres dropdb digipoort
-sudo -u postgres createdb -D dbtemp digipoort
+sudo -u postgres createdb digipoort
 sudo -u postgres psql -c "grant all privileges on database digipoort to digipoort"
 export PGPASSWORD=digipoort
 for sqlscript in $SQL_SCRIPTS; do
   psql -h localhost -d digipoort -U digipoort -w -f $HOME/sql/$sqlscript
 done
 
-sudo -u postgres createuser oveheid
+sudo -u postgres createuser overheid
 sudo -u postgres psql -c "alter user overheid with encrypted password 'overheid'"
 sudo -u postgres dropdb overheid
-sudo -u postgres createdb -D dbtemp overheid
+sudo -u postgres createdb overheid
 sudo -u postgres psql -c "grant all privileges on database overheid to overheid"
 export PGPASSWORD=overheid
 for sqlscript in $SQL_SCRIPTS; do

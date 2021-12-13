@@ -3,7 +3,7 @@ export DIGIPOORT_HOME=$HOME/digipoort
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export JDBCJAR=postgresql-42.2.14.jar
-export LOG4J_CONFIGURATION_FILE=$HOME/log4j2.xml
+export LOG4J_CONFIGURATION_FILE=$HOME/lib/log4j2.xml
 
 export VERSION=2.18.2
 
