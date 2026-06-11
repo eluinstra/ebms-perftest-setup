@@ -9,5 +9,5 @@ export ebms_port=8088
 
 cd $OVERHEID_HOME
 rm overheid.log
-nohup $JAVA_HOME/bin/java $JAVA_ARGS -cp ${JDBCJAR}:${EBMSJAR} nl.clockwork.ebms.admin.StartEmbedded -soap -port 8000 $@ > overheid.log &
+nohup $JAVA_HOME/bin/java $JAVA_ARGS -cp ${JDBCJAR}:${EBMSJAR} nl.clockwork.ebms.server.embedded.StartEmbedded -soap -port 8000 $@ > overheid.log &
 echo $! > overheid.pid

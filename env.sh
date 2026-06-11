@@ -6,7 +6,7 @@ export JDBCJAR=$PWD/lib/postgresql-42.2.23.jar
 export LOG4J_CONFIGURATION_FILE=$PWD/lib/log4j2.xml
 
 export VERSION=2.18.11
-export EBMSJAR=$PWD/lib/ebms-admin-${VERSION}.jar
+export EBMSJAR=$PWD/lib/ebms-server-${VERSION}.jar
 
 export JAVA_ARGS="-Xms2048m -Xmx2048m"
 

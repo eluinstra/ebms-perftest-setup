@@ -10,5 +10,5 @@ export ebms_port=8888
 
 cd $DIGIPOORT_HOME
 rm digipoort.log
-nohup $JAVA_HOME/bin/java $JAVA_ARGS -cp ${JDBCJAR}:${EBMSJAR} nl.clockwork.ebms.admin.StartEmbedded -soap -port 8080 $@ > digipoort.log &
+nohup $JAVA_HOME/bin/java $JAVA_ARGS -cp ${JDBCJAR}:${EBMSJAR} nl.clockwork.ebms.server.embedded.StartEmbedded -soap -port 8080 $@ > digipoort.log &
 echo $! > digipoort.pid
