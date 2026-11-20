@@ -3,7 +3,7 @@ sudo apt update
 sudo apt install openjdk-8-jre-headless openjdk-11-jre-headless openjdk-17-jre-headless postgresql
 
 # "install" jmeter
-JMETER_VERSION=5.4.1
+JMETER_VERSION=5.6.3
 JMETER_ARCHIVE=apache-jmeter-${JMETER_VERSION}.tgz
 if [ -f $JMETER_ARCHIVE ]; then
   echo jmeter $JMETER_VERSION already downloaded
@@ -14,8 +14,8 @@ else
 fi
 
 # download stuff
-curl -O https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.4.1.tgz
-curl https://repo1.maven.org/maven2/org/postgresql/postgresql/42.2.23/postgresql-42.2.23.jar -o lib/postgresql-42.2.23.jar
+curl -O https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.6.3.tgz
+curl https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.14/postgresql-42.7.14.jar -o lib/postgresql-42.7.14.jar
 curl -L https://github.com/eluinstra/ebms-admin/releases/download/ebms-admin-2.18.11/ebms-admin-2.18.11.jar -o lib/ebms-admin-2.18.11.jar
 curl -L https://github.com/eluinstra/ebms-admin/releases/download/ebms-admin.2.18.4/ebms-admin-2.18.4.jar -o lib/ebms-admin-2.18.4.jar
 curl -L https://github.com/eluinstra/ebms-admin/releases/download/ebms-admin.2.18.3/ebms-admin-2.18.3.jar -o lib/ebms-admin-2.18.3.jar
